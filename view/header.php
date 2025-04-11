@@ -11,7 +11,7 @@
 
     <?php
     $menuItems = [
-        '' => 'Home',
+        'home' => 'Home',
         'task' => 'Task',
     ];
     ?>

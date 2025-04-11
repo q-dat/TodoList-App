@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 10px;
+  background-color: #222;
+  padding: 20px 10px;
 }
 .navbar ul {
   list-style: none;
@@ -20,7 +20,12 @@
   padding: 8px 16px;
 }
 .navbar a.active {
-  background-color: #000;
+  background-color: #fff;
+  color: #000;
+}
+.navbar a:hover {
+  background-color: #444;
+  color: #fff;
 }
 footer {
   text-align: center;

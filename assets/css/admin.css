@@ -1,6 +1,9 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #222;
-  padding: 10px;
+  padding: 20px 10px;
 }
 .navbar ul {
   list-style: none;
@@ -20,6 +23,7 @@
   background-color: #ff4444;
 }
 footer {
+  margin-top: 20px;
   text-align: center;
   padding: 10px;
   background-color: #ddd;

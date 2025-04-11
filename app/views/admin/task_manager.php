@@ -1,5 +1,5 @@
 <h1>Task Manager</h1>
-<a href="admin.php?page=create_task" style="margin-bottom: 10px; display:inline-block;">Thêm Task</a>
+<a href="create_task" style="margin-bottom: 10px; display:inline-block;">Thêm Task</a>
 
 <table style="width: 100%; border-collapse: collapse; ">
     <thead>
@@ -30,8 +30,8 @@
                     <?= $task['due_date'] ?? '<em>Không đặt</em>' ?>
                 </td>
                 <td style="padding: 10px; border: 1px solid #ddd; text-align: center;">
-                    <a href="admin.php?page=edit_task&id=<?= $task['id'] ?>"> Sửa</a> |
-                    <a href="admin.php?page=delete_task&id=<?= $task['id'] ?>" onclick="return confirm('Xác nhận xoá task này?')">Xoá</a>
+                    <a href="edit_task&id=<?= $task['id'] ?>"> Sửa</a> |
+                    <a href="delete_task&id=<?= $task['id'] ?>" onclick="return confirm('Xác nhận xoá task này?')">Xoá</a>
                 </td>
             </tr>
         <?php endforeach; ?>
