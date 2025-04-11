@@ -17,7 +17,7 @@
     <nav class="navbar">
         <ul>
             <?php foreach ($menuItems as $link => $label): ?>
-                <a href="/TodoList/admin/<?php echo $link; ?>"
+                <a href="/TodoList-App/admin/<?php echo $link; ?>"
                     class="<?php echo $currentPage == $link ? 'active' : ''; ?>">
                     <?php echo $label; ?>
                 </a>

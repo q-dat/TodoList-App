@@ -1,7 +1,7 @@
-<h1 style="font-family: Arial, sans-serif; color: #333;">📝 Task Manager</h1>
+<h1>Task Manager</h1>
 <a href="admin.php?page=create_task" style="margin-bottom: 10px; display:inline-block;">Thêm Task</a>
 
-<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
+<table style="width: 100%; border-collapse: collapse; ">
     <thead>
         <tr style="background-color: #f2f2f2;">
             <th style="padding: 10px; border: 1px solid #ddd;">ID</th>

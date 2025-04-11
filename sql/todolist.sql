@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 11, 2025 lúc 04:22 AM
+-- Thời gian đã tạo: Th4 11, 2025 lúc 07:32 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -38,17 +38,6 @@ CREATE TABLE `tasks` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `tasks`
---
-
-INSERT INTO `tasks` (`id`, `title`, `description`, `status`, `due_date`, `created_at`, `updated_at`) VALUES
-(1, 'Học PHP MVC', 'Ôn lại kiến trúc Model View Controller trong PHP', 'in_progress', '2025-04-20', '2025-04-10 08:52:40', '2025-04-10 08:52:40'),
-(2, 'Thiết kế giao diện', 'Làm UI cho TodoList', 'pending', '2025-04-01', '2025-04-10 08:52:40', '2025-04-10 10:18:14'),
-(3, 'Triển khai API', 'Tạo các endpoint cho task', 'done', '2025-04-15', '2025-04-10 08:52:40', '2025-04-10 08:52:40'),
-(5, 'mới sauwr', '123', 'pending', '2025-04-05', '2025-04-10 10:10:26', '2025-04-10 10:18:11'),
-(6, 'test123', '324', 'pending', '2025-04-05', '2025-04-10 10:12:02', '2025-04-10 10:18:07');
-
---
 -- Chỉ mục cho các bảng đã đổ
 --
 
@@ -66,7 +55,7 @@ ALTER TABLE `tasks`
 -- AUTO_INCREMENT cho bảng `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

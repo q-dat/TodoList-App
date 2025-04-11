@@ -17,9 +17,9 @@
         <div>
             <label for="status">Trạng thái:</label><br>
             <select id="status" name="status" style="width: 100%; padding: 8px; box-sizing: border-box;">
-                <option value="pending" <?= $task['status'] === 'pending' ? 'selected' : '' ?>>Chưa xong</option>
-                <option value="in_progress" <?= $task['status'] === 'in_progress' ? 'selected' : '' ?>>Đang làm</option>
-                <option value="done" <?= $task['status'] === 'done' ? 'selected' : '' ?>>Hoàn thành</option>
+                <option value="pending" <?= $task['status'] === 'pending' ? 'selected' : '' ?>>Chưa hoàn thành</option>
+                <option value="in_progress" <?= $task['status'] === 'in_progress' ? 'selected' : '' ?>>Đang tiến hành</option>
+                <option value="done" <?= $task['status'] === 'done' ? 'selected' : '' ?>>Đã hoàn thành</option>
             </select>
         </div>
 

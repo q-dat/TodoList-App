@@ -1,1 +1,1 @@
-<p>Đây là trang Dashboard</p>
+<h1>Đây là trang Dashboard</h1>

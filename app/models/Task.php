@@ -6,6 +6,7 @@ class Task
     {
         $this->db = getDbConnection();
     }
+    // GET ALL
     public function getAll()
     {
         $result = $this->db->query("SELECT * FROM tasks ORDER BY id DESC");
@@ -15,11 +16,13 @@ class Task
         }
         return $tasks;
     }
+    // POST
     public function create($title, $description, $status = 'pending', $due_date = null)
     {
         $stmt = $this->db->prepare("INSERT INTO tasks (title, description, status, due_date) VALUES (?, ?, ?, ?)");
         return $stmt->execute([$title, $description, $status, $due_date]);
     }
+    // GET BY ID
     public function find($id)
     {
         $stmt = $this->db->prepare("SELECT * FROM tasks WHERE id = ?");
@@ -27,11 +30,13 @@ class Task
         $stmt->execute();
         return $stmt->get_result()->fetch_assoc();
     }
+    // PUT
     public function update($id, $title, $description, $status, $due_date = null)
     {
         $stmt = $this->db->prepare("UPDATE tasks SET title = ?, description = ?, status = ?, due_date = ?, updated_at = NOW() WHERE id = ?");
         return $stmt->execute([$title, $description, $status, $due_date, $id]);
     }
+    // DELETE
     public function delete($id)
     {
         $stmt = $this->db->prepare("DELETE FROM tasks WHERE id = ?");

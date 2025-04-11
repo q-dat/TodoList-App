@@ -15,9 +15,9 @@
         <div>
             <label for="status">Trạng thái:</label><br>
             <select id="status" name="status" style="width: 100%; padding: 8px; box-sizing: border-box;">
-                <option value="pending">Chưa xong</option>
-                <option value="in_progress">Đang làm</option>
-                <option value="done">Hoàn thành</option>
+                <option value="pending">Chưa hoàn thành</option>
+                <option value="in_progress">Đang tiến hành</option>
+                <option value="done">Đã hoàn thành</option>
             </select>
         </div>
 

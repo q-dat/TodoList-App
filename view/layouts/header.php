@@ -11,7 +11,7 @@
 
     <?php
     $menuItems = [
-        'home' => 'Home',
+        '' => 'Home',
         'task' => 'Task',
     ];
     ?>
@@ -19,7 +19,7 @@
         <ul class='menu-left'>
             <?php foreach ($menuItems as $link => $label): ?>
                 <li>
-                    <a href="/TodoList/<?php echo $link; ?>"
+                    <a href="/TodoList-App/<?php echo $link; ?>"
                         class="<?php echo $currentPage == $link ? 'active' : ''; ?>">
                         <?php echo $label; ?>
                     </a>
@@ -28,7 +28,7 @@
         </ul>
         <ul class='menu-right'>
             <li>
-                <a href="/TodoList/admin/dashboard">Quản Lý Task</a>
+                <a href="/TodoList-App/admin/dashboard">Quản Lý Task</a>
             </li>
         </ul>
     </nav>
