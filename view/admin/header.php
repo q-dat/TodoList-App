@@ -18,11 +18,13 @@
     <nav class="navbar">
         <ul class='menu-left'>
             <?php foreach ($menuItems as $link => $label): ?>
-                <a href="/TodoList-App/admin/<?php echo $link; ?>"
-                    class="<?php echo $currentPage == $link ? 'active' : ''; ?>">
-                    <?php echo $label; ?>
-                </a>
-            <?php endforeach; ?>
+                <li>
+                    <a href="/TodoList-App/admin/<?php echo $link; ?>"
+                        class="<?php echo $currentPage == $link ? 'active' : ''; ?>">
+                        <?php echo $label; ?>
+                    </a>
+                </li>
+                <?php endforeach; ?>
         </ul>
         <ul class='menu-right'>
             <li>
@@ -30,4 +32,3 @@
             </li>
         </ul>
     </nav>
-    <div class="content">
