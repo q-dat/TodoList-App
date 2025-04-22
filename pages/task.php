@@ -1,3 +1,3 @@
-<h1>Đây là TaskPage</h1>
+<h1>Danh sách Task:</h1>
 <ul id="task-list"></ul>
-<script src="/assets/js/script.js"></script>
+<script src="./assets/js/script.js"></script>

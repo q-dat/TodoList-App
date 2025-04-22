@@ -93,11 +93,11 @@
                 </td>
                 <td>
                     <?php if (!empty($task['status']) && $task['status'] === 'done'): ?>
-                        Hoàn thành
+                        Đã hoàn thành
                     <?php elseif ($task['status'] === 'in_progress'): ?>
-                        Đang làm
+                       Đang tiến hành
                     <?php else: ?>
-                        Chưa làm
+                        Chưa hoàn thành
                     <?php endif; ?>
                 </td>
                 <td class="center">
